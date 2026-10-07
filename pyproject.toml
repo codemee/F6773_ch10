@@ -1,0 +1,22 @@
+[project]
+name = "certificate-maker"
+version = "0.1.0"
+description = "Generate Word training certificates from an Excel attendee list and Word template."
+requires-python = ">=3.11"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pywin32>=311 ; sys_platform == 'win32'",
+]
+
+[project.scripts]
+certificate-maker = "certificate_maker:main"
+certificate-to-pdf = "certificate_to_pdf:main"
+certificate-batch = "certificate_batch:main"
+certificate-email-test = "certificate_email_test:main"
+certificate-email-batch = "certificate_email_batch:main"
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+py-modules = ["certificate_maker", "certificate_to_pdf", "certificate_to_pdf_lo", "certificate_batch", "certificate_email_test", "certificate_email_batch"]

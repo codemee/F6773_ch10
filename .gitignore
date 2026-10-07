@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.egg-info/
+輸出證書/
+輸出 PDF 證書/
+證書批次輸出/
+證書寄送批次/
+.qa/
+.env
+.publish*/
+.uv-cache/
+.word-*/
+範本 PDF 測試/
+/參加者名單*.xlsx
+/研習證書範本.docx
